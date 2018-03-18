@@ -4550,6 +4550,16 @@ public final class Settings {
                 BOOLEAN_VALIDATOR;
 
         /**
+         * Whether to change the transparency of the qs panel
+         * @hide
+         */
+        public static final String QS_PANEL_BG_ALPHA = "qs_panel_bg_alpha";
+
+        /** @hide */
+        private static final Validator QS_PANEL_BG_ALPHA_VALIDATOR =
+                ANY_INTEGER_VALIDATOR;
+
+        /**
          * @hide
          */
         public static final String CUSTOM_DEVICE_FEATURE_SETTINGS = "device_feature_settings";
@@ -4627,6 +4637,7 @@ public final class Settings {
             CUSTOM_DEVICE_PROXI_CHECK_ENABLED,
             CUSTOM_DEVICE_GESTURE_FEEDBACK_ENABLED,
             CUSTOM_DEVICE_FEATURE_SETTINGS,
+            QS_PANEL_BG_ALPHA,
         };
 
         /**
@@ -4751,6 +4762,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(CUSTOM_DEVICE_GESTURE_FEEDBACK_ENABLED);
             PRIVATE_SETTINGS.add(CUSTOM_DEVICE_FEATURE_SETTINGS);
             PRIVATE_SETTINGS.add(PROXIMITY_ON_WAKE);
+            PRIVATE_SETTINGS.add(QS_PANEL_BG_ALPHA);
         }
 
         /**
@@ -4849,6 +4861,7 @@ public final class Settings {
             VALIDATORS.put(CUSTOM_DEVICE_GESTURE_FEEDBACK_ENABLED, CUSTOM_DEVICE_GESTURE_FEEDBACK_ENABLED_VALIDATOR);
             VALIDATORS.put(CUSTOM_DEVICE_FEATURE_SETTINGS, CUSTOM_DEVICE_FEATURE_SETTINGS_VALIDATOR);
             VALIDATORS.put(PROXIMITY_ON_WAKE, PROXIMITY_ON_WAKE_VALIDATOR);
+            VALIDATORS.put(QS_PANEL_BG_ALPHA, QS_PANEL_BG_ALPHA_VALIDATOR);
         }
 
         /**
