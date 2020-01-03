@@ -35,13 +35,7 @@
 
   <java-symbol type="integer" name="config_flashlightProximityTimeout" />
 
-<<<<<<< HEAD
-=======
-  <!-- For Pdn throttle feature -->
-  <java-symbol type="bool" name="config_pdp_retry_for_29_33_55_enabled" />
-
   <!-- Whether to show a custom view for FOD -->
   <java-symbol type="bool" name="config_needCustomFODView" />
 
->>>>>>> 2bc17e331a4... Initial support for in-display fingerprint sensors
 </resources>
